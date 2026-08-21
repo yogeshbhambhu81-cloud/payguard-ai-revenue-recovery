@@ -1,0 +1,22 @@
+{
+  "name": "payguard-ai",
+  "version": "1.0.0",
+  "description": "PayGuard AI - AI Revenue Recovery Agent for Razorpay Merchants",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "razorpay",
+    "revenue-recovery",
+    "ai",
+    "gemini",
+    "hackathon"
+  ],
+  "author": "PayGuard Team",
+  "license": "MIT"
+}
